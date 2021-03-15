@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min-2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1 class="primary-text text-center mt-3"><i class="fas fa-bug" style="color: greenyellow;"></i> <span style="color: greenyellow;">Bug</span>Reporter</h1>
+
+
+
+    <!-- Bug Title -->
+    <div class="form-group mt-4 mr-4 ml-4">
+        <label for="bugTitle-txt">Title</label>
+        <input type="text" class="form-control" id="bugTitle-txt" 
+            placeholder="Enter the title for the issue">
+    </div>
+
+    <!-- Bug description -->
+    <div class="form-group mt-4 mr-4 ml-4">
+        <label for="bugDescription-txt">Description</label>
+        <input type="text" class="form-control" id="bugDescription-txt" 
+            placeholder="What is the issue that you are having?" style="height: 200px;">
+    </div>
+
+    <!-- The sumbit button -->
+    
+    <input type="submit" value="Submit Bug" class="btn btn-success ml-4">
+
+    <!-- The table that lists all the bugs -->
+    <table class="table table-striped mt-4 mr-4 ml-4">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody class="mr-3" id="bug-list"></tbody>
+    </table>
+</body>
+<script src="app.js"></script>
+</html>
